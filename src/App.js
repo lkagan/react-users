@@ -10,10 +10,12 @@ function App() {
     }
 
     return (
-        <div>
+        // Alias for <React.Fragment></React.Fragment>
+        // Can also use <Fragment /> if imported from React.
+        <>
             <AddUser onAddUser={addUserHandler}/>
             <UsersList users={usersList}/>
-        </div>
+        </>
     );
 }
 
